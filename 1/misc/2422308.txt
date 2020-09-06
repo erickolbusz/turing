@@ -1,0 +1,11 @@
+Iterations: 2422308
+
+Current Char: 4000002
+Current Index: 5
+Current State: 3
+
+Left Tape End: 3999670
+Right Tape End: 4000002
+
+
+1b 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6a db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 da b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 da b6 db 6b 6d b6 db 6d 6d b6 db 6d b5 40 

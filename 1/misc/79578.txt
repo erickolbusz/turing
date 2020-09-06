@@ -1,0 +1,11 @@
+Iterations: 79578
+
+Current Char: 4000002
+Current Index: 7
+Current State: 3
+
+Left Tape End: 3999947
+Right Tape End: 4000002
+
+
+1b 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 db 6d b6 da db 6d b6 db 5b 6d b6 db 6d b6 db 6d b6 db 6d 6d b6 da b6 b6 d5 0 

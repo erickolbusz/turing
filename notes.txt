@@ -1,0 +1,4 @@
+16/19
+	19 looks like a faster version of 16
+20
+	tapelength ~ sqrt(steps) empirically 
