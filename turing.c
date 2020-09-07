@@ -152,7 +152,7 @@ int main() {
 	// C: 1,>,D/0,<,D
 	// D: 1,<,A/1,>,E
 	// E: 0,<,B/0,>,C
-	///*
+	/*
 	machine[0].move0 = -1;
 	machine[0].write0 = 1;
 	machine[0].next0 = 2;
@@ -195,7 +195,7 @@ int main() {
 	// C: 1,>,D/1,>,C
 	// D: 1,<,E/0,<,E
 	// E: 0,<,A/0,>,B
-	/*
+	///*
 	machine[0].move0 = -1;
 	machine[0].write0 = 1;
 	machine[0].next0 = 1;
@@ -393,9 +393,30 @@ int main() {
 	unsigned long tapelength[numSteps];
 	unsigned int savei = 0;
 
+	const unsigned long ofInterest[] = {131075, 212995, 262147, 294915, 376835, 425987, 475139, 524291, 557059, 589827, 622595, 704515, 753667, 802819, 851971, 901123, 950275, 999427, 1048579, 1081347, 1114115, 1146883, 1179651, 1212419, 1245187, 1277955, 1359875, 1409027, 1458179, 1507331, 1556483, 1605635, 1654787, 1703939, 1753091, 1802243, 1851395, 1900547, 1949699, 1998851, 2048003, 2097155, 2129923, 2162691, 2195459, 2228227, 2260995, 2293763, 2326531, 2359299, 2392067, 2424835, 2457603, 2490371};
+	int isFlat = 0;
+	int interesti = 0;
+	unsigned long currentinterest = ofInterest[0];
+	int currentlen;
+	unsigned long leftEdge = 0;
+
 	sigintBreak = 0;
 	signal(SIGINT, handle_sigint);
 	while (1) {
+		//flat area testing
+		currentlen = 8*(maxTape-minTape)-maxInd+minInd+1;
+		if (!isFlat && currentlen == currentinterest) {
+			leftEdge = steps;
+			isFlat = 1;
+		}
+		if (isFlat && currentlen > currentinterest) {
+			printf("Tape was length %lu from (inclusive) steps %lu to %lu\n", currentinterest, leftEdge, steps-1);
+			interesti++;
+			currentinterest = ofInterest[interesti];
+			isFlat = 0;
+		}
+
+
 		//compute, write, maybe exit
 		if (state == MACHINESIZE) {
 			printf("Halted after %lu steps. %d\n", steps);

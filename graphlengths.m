@@ -23,18 +23,23 @@ logx = log(rawx);
 % graphLengthCustom(19,cbrtx,'cbrt');
 % graphLengthCustom(19,logx,'log');
 % looks like 16 stretched horizontally?
-data = readLenFile(19);
-%rawx = MIN:(DX/2):(MAX/2);
-%rawx = rawx';
-%scatter(rawx, data(:,2), 10);
-scatter(data(:,1), data(:,2), 10);
-ylim([0 2500000]);
-saveas(gcf, '19/compressed.png');
+% data = readLenFile(19);
+% %rawx = MIN:(DX/2):(MAX/2);
+% %rawx = rawx';
+% %scatter(rawx, data(:,2), 10);
+% scatter(data(:,1), data(:,2), 10);
+% ylim([0 2500000]);
+% saveas(gcf, '19/compressed.png');
 
 % graphLength(20);
 % graphLengthCustom(20,sqrtx,'sqrt'); %%this for sure
 % graphLengthCustom(20,cbrtx,'cbrt');
 % graphLengthCustom(20,logx,'log');
+
+graphLength(37);
+graphLengthCustom(37,sqrtx,'sqrt'); %%this for sure
+graphLengthCustom(37,cbrtx,'cbrt');
+graphLengthCustom(37,logx,'log');
 
 function lendata = readLenFile(num)
     filename = sprintf('%d/lengths.txt', num);
